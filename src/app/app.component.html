@@ -1,0 +1,17 @@
+<div class="outer-container">
+  <div class="container-body">
+    <div class="view-container">
+      <div class="left-container">
+        <app-nav></app-nav>
+      </div>
+      <div class="right-container">
+        <app-search (searchItem)="search($event)"></app-search>
+        <app-trending [data]="data" *ngIf="router.url==='/'"></app-trending>
+        <app-recommended *ngIf="router.url==='/'" [data]="data"></app-recommended>
+        <app-movies *ngIf="router.url==='/movies'" [data]="data"></app-movies>
+        <app-series *ngIf="router.url==='/series'" [data]="data"></app-series>
+        <app-bookmarks *ngIf="router.url==='/bookmarks'"[data]="data"></app-bookmarks>
+      </div>
+    </div>
+  </div>
+</div>

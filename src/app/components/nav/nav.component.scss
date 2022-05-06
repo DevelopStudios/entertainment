@@ -1,0 +1,93 @@
+.nav {
+  width: 96px;
+  background: #161D2F;
+  border-radius: 20px;
+  height: 960px;
+  margin: 32px;
+  .entries-container {
+    position: absolute;
+    top: 70px;
+    width: 96px;
+    display: table-column;
+    text-align: center;
+    .icon-movies {
+      margin-top: 70px;
+    }
+    .icon-tv {
+      margin-top: 40px;
+    }
+    .icon-tvseries {
+      margin-top: 40px;
+    }
+    .icon-bookmarks {
+      margin-top: 40px;
+    }
+    .icon-movies.nav-item {
+      background: url(../../../assets/icon-nav-home.svg);
+      height: 20px;
+      width: 20px;
+      display: flex;
+      margin: 40px auto auto;
+    }
+    .icon-movies.nav-item.active {
+      background: url(../../../assets/icon-nav-home-active.svg);
+    }
+    .icon-movies.nav-item:hover {
+      cursor: pointer;
+      background: url(../../../assets/icon-nav-home-hover.svg);
+    }
+    .icon-tv.nav-item {
+      background: url(../../../assets/icon-nav-movies.svg);
+      height: 20px;
+      width: 20px;
+      display: flex;
+      margin: 40px auto auto;
+    }
+    .icon-tv.nav-item.active {
+      background: url(../../../assets/icon-nav-movies-active.svg);
+    }
+    .icon-tv.nav-item:hover {
+      cursor: pointer;
+      background: url(../../../assets/icon-nav-movies-hover.svg);
+    }
+    .icon-tvseries.nav-item {
+      background: url(../../../assets/icon-nav-tv-series.svg);
+      height: 20px;
+      width: 20px;
+      display: flex;
+      margin: 40px auto auto;
+    }
+    .icon-tvseries.nav-item.active {
+      background: url(../../../assets/icon-nav-tv-series-active.svg);
+    }
+    .icon-tvseries.nav-item:hover {
+      cursor: pointer;
+      background: url(../../../assets/icon-nav-tv-series-hover.svg);
+    }
+    .icon-bookmarks.nav-item.active {
+      background: url(../../../assets/icon-nav-bookmark-active.svg);
+    }
+    .icon-bookmarks.nav-item {
+      background: url(../../../assets/icon-nav-bookmark.svg);
+      height: 20px;
+      width: 17px;
+      display: flex;
+      margin: 40px auto auto;
+    }
+    .icon-bookmarks.nav-item:hover {
+      cursor: pointer;
+      background: url(../../../assets/icon-nav-bookmark-hover.svg);
+    }
+  }
+  .profile {
+    position: relative;
+    top: 880px;
+    text-align: center;
+    img {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #fff;
+      border-radius: 30px;
+    }
+  }
+}

@@ -1,0 +1,4 @@
+<h3>Trending</h3>
+<div class="card-list trending">
+  <app-card [data]="card"[trending]="true" *ngFor="let card of getTrending(),let i = index" [background]="card.thumbnail.trending.large" [index]="i"></app-card>
+</div>

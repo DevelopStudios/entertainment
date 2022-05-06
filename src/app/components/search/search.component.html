@@ -1,0 +1,10 @@
+<div class="search-container">
+  <div class="search-toggle">
+    <div class="search-icon">
+    </div>
+  </div>
+  <div class="search-box">
+    <input type="input" class="form__field" placeholder="Name" name="name" id='name' [ngModel]="searchText" (ngModelChange)="emitText($event)" />
+    <label for="name" class="form__label">Search for movies or TV series</label>
+  </div>
+</div>

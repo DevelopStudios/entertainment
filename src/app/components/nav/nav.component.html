@@ -1,0 +1,24 @@
+<div class="nav">
+  <div class="entries-container">
+    <div class="icon-home">
+      <img src="assets/logo.svg" alt="app logo">
+    </div>
+    <div class="entries">
+      <div class="icon-movies nav-item" routerLink="/" [ngClass]="router.url === '/'? 'active':''">
+        <!--      <img src="assets/icon-nav-home.svg" alt="">-->
+      </div>
+      <div class="icon-tv nav-item" routerLink="/movies" [ngClass]="router.url === '/movies'? 'active':''">
+        <!--      <img src="assets/icon-nav-movies.svg" alt="">-->
+      </div>
+      <div class="icon-tvseries nav-item" routerLink="/series" [ngClass]="router.url === '/series'? 'active':''">
+        <!--      <img src="assets/icon-nav-tv-series.svg" alt="">-->
+      </div>
+      <div class="icon-bookmarks nav-item" routerLink="/bookmarks" [ngClass]="router.url === '/bookmarks'? 'active':''">
+        <!--      <img src="assets/icon-nav-bookmark.svg" alt="">-->
+      </div>
+    </div>
+  </div>
+  <div class="profile">
+    <img src="assets/image-avatar.png" alt="Avatar">
+  </div>
+</div>

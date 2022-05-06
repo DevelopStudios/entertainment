@@ -1,0 +1,5 @@
+<h3>Recommended for you</h3>
+<div class="card-list">
+  <app-card [data]="card"[trending]="false" *ngFor="let card of getRecommended(), let i = index" [index]="i" [background]="card.thumbnail.regular.large"></app-card>
+</div>
+

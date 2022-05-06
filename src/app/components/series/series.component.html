@@ -1,0 +1,4 @@
+<h3>TV Series</h3>
+<div class="card-list">
+  <app-card [data]="card" [trending]="false" *ngFor="let card of getSeries()" [background]="card.thumbnail.regular.large"></app-card>
+</div>

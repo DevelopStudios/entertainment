@@ -1,0 +1,139 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0 !important;
+  font-family: 'Outfit';
+}
+html {
+  background: #10141e;
+}
+h3 {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  color: #FFFFFF;
+}
+.card-list {
+  display: grid;
+  width: 100%;
+
+  padding-bottom: 20px;
+  grid-column-gap: 30px;
+  grid-template-columns: 17.5rem 17.5rem 17.5rem 17.5rem;
+  row-gap: 35px;
+}
+
+.card-list.trending {
+  flex-flow: nowrap !important;
+  display: flex;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 1078px) {
+  .card-container {
+    height: 8.75rem !important;
+    width: 13.75rem !important;
+}
+.container .outer-container:hover .play-icon img {
+  position: relative;
+  top: -89px !important;
+  left: 50px !important;
+}
+.card-container.trending {
+  height: 230px !important;
+  width: 470px !important;
+}
+.trending-container .icon {
+  width: 28.4rem !important;
+}
+.container .icon {
+  width: 13.1rem;
+}
+.card-list {
+  grid-template-columns: 13.5rem 13.5rem 13.5rem !important;
+}
+.container-body .view-container {
+  display: block !important;
+}
+.nav {
+  width: 87% !important;
+  height: 72px !important;
+  .profile {
+    position: relative !important;
+    height: unset !important;
+    top: -55px !important;
+    width: 80px;
+    float: right;
+    margin-right: 14px;
+
+  }
+}
+.nav .entries-container {
+  position: relative !important;
+  top: unset !important;
+  width: 87% !important;
+  height: 71px;
+  display: flex !important;
+  text-align: unset !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+    .entries {
+      display: flex !important;
+      width: 192px;
+      justify-content: space-between;
+      margin: auto;
+  }
+  .icon-home {
+    width: 70px;
+    text-align: center;
+}
+
+}
+
+.container-body .view-container .right-container {
+  width: 84%;
+  margin: auto;
+}
+.nav .entries-container .nav-item {
+  margin: 0 !important;
+}
+}
+
+
+@media only screen and (max-width: 1250px) {
+
+  .card-list {
+      display: grid;
+      width: 100%;
+      padding-bottom: 20px;
+      grid-column-gap: 30px;
+      grid-template-columns: 17.5rem 17.5rem 17.5rem;
+      grid-row-gap: 35px;
+      row-gap: 35px;
+  }
+}
+
+@media only screen and (min-width: 1721px) {
+  .container-body .view-container .right-container {
+    width: 84%;
+  }
+  .card-list {
+      display: grid;
+      width: 100%;
+      padding-bottom: 20px;
+      grid-column-gap: 30px;
+      grid-template-columns: 17.5rem 17.5rem 17.5rem 17.5rem 17.5rem;
+      grid-row-gap: 35px;
+      row-gap: 35px;
+  }
+}
+
+@media only screen and (max-width: 538px) {
+  .card-list {
+    grid-template-columns: 12.5rem 12.5rem !important;
+    row-gap: 0px !important;
+  }
+  .nav .entries-container .entries {
+    width: 167px;
+  }
+}

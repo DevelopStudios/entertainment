@@ -1,0 +1,112 @@
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.card-container {
+  height: 10.875rem;
+  width: 17.5rem;
+  border-radius: 8px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.card-container:hover {
+  cursor: pointer;
+}
+.trending {
+  height: 230px;
+  width: 470px;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin: 0;
+  position: relative;
+}
+.details {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  .year {
+    margin-right: 6px;
+  }
+  .category {
+    margin-right: 6px;
+  }
+  .spacer {
+    margin-right: 6px;
+    font-size: 42px;
+    position: relative;
+    top: -3px;
+  }
+}
+
+.details.trending-details {
+  margin-top: -51px;
+  margin-left: 17px;
+}
+
+.trending-header {
+  padding-left: 14px;
+}
+.container.trending-container {
+  .outer-container:hover {
+    .card-container {
+      opacity: 0.2;
+    }
+    .play-icon {
+      margin-top: -80px;
+      img {
+        position: relative;
+        top: -74px !important;
+        left: 176px !important;
+      }
+    }
+}
+}
+.outer-container {
+  margin-bottom: -47px;
+}
+.container {
+  .outer-container:hover {
+    .card-container {
+      opacity: 0.2;
+    }
+    .play-icon {
+      visibility: visible;
+      img {
+        position: relative;
+        top: -111px;
+        left: 76px;
+    }
+  }
+}
+}
+
+.play-icon {
+  visibility: hidden;
+}
+
+.container {
+  .icon {
+    text-align: right;
+    position: relative;
+    bottom: -42px;
+    margin-right: 6px;
+    z-index:9;
+}
+.icon:hover {
+  cursor: pointer;
+}
+}

@@ -1,0 +1,4 @@
+<h3>Bookmarks</h3>
+<div class="card-list">
+  <app-card [data]="card" [trending]="false" *ngFor="let card of getBookmarks(), let i = index" [index]="i" [background]="card.thumbnail.regular.large"></app-card>
+</div>

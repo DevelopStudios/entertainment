@@ -1,0 +1,25 @@
+<div class="container" [ngClass]="trending === true? 'trending-container':''">
+    <div class="icon" *ngIf="data?.isBookmarked === false">
+      <img src="assets/bookmark-unchecked.svg" alt="bookmark icon" (click)="toggleBookmark()">
+    </div>
+    <div class="icon" *ngIf="data?.isBookmarked === true">
+      <img src="assets/bookmark-selected.svg" alt="bookmark icon" (click)="toggleBookmark()">
+    </div>
+    <div class="outer-container">
+      <div class="card-container" [ngClass]="trending === true? 'trending':''"
+      [style.background-image]="'url(' + background + ')'">
+    </div>
+    <div class="play-icon">
+      <img src="assets/play-button.svg" alt="">
+    </div>
+    </div>
+</div>
+
+<div class="details" [ngClass]="trending === true? 'trending-details':''">
+  <span class="year">{{data.year}}</span>
+  <span class="spacer">.</span>
+  <span class="category">{{data.category}}</span>
+  <span class="spacer">.</span>
+  <span class="rating">{{data.rating}}</span>
+</div>
+<h4 [ngClass]="trending === true? 'trending-header':''">{{data.title}}</h4>
